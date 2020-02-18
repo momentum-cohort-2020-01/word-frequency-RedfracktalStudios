@@ -1,13 +1,21 @@
-STOP_WORDS = [
-    'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from', 'has', 'he',
-    'i', 'in', 'is', 'it', 'its', 'of', 'on', 'that', 'the', 'to', 'were',
-    'will', 'with'
-]
+# import string
+
+# STOP_WORDS = [
+#     'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from', 'has', 'he',
+#     'i', 'in', 'is', 'it', 'its', 'of', 'on', 'that', 'the', 'to', 'were',
+#     'will', 'with'
+# ]
+# print(string.punctuation)
 
 
 def print_word_freq(file):
-    """Read in `file` and print out the frequency of words in that file."""
-    pass
+    with open(file) as file:
+        open_file = file.read()
+        print(type(open_file))
+    print(open_file)
+
+
+# def open file(file):
 
 
 if __name__ == "__main__":
